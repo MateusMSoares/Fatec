@@ -18,12 +18,12 @@ def partes_conjunto(ConjuntoA, ConjuntoB):
 
     for i in range(len(ConjuntoA) + 1): #Itera para diferentes tamanhos de subconjuntos de ConjuntoA
         partes_conjuntaA.extend(combinations(ConjuntoA, i))#Gera(combinations) e estende(adiciona o subconjunto gerado) a lista com subconjuntos de tamanho i
-        print(f'Partes do Conjunto 1: {partes_conjuntaA}')
-        print(f'len de {len(ConjuntoA)} e i = {i}')
+    print(f'Partes do Conjunto 1: {partes_conjuntaA}')
+
 
     for i in range(len(ConjuntoB) + 1):
         partes_conjuntaB.extend(combinations(ConjuntoB, i))#Itera para diferentes tamanhos de subconjuntos de ConjuntoA
-    print(f'Partes do Conjunto 2: {partes_conjuntaB}')#Gera(combinations) e estende(adiciona o subconjunto gerado) a lista com subconjuntos de tamanho i
+    print(f'Partes do Conjunto 2: {partes_conjuntaB}')
 
 
 
