@@ -10,12 +10,14 @@ def criar_matriz_relacao(conjunto, relacoes):
     # Preenche a matriz com 1 onde a relação existe
     for relacao in relacoes:
         elemento1, elemento2 = relacao # pega o elemento de cada relação
-        print(f" \nPara a relação: ({elemento1}, {elemento2})")
+    
         indice1 = conjunto.index(elemento1) + 1 # pega o índice do primeiro elemento
         indice2 = conjunto.index(elemento2) + 1 # pega o índice do segundo elemento
+        matriz[indice1][indice2] = 1 #linha(a lista dentro da matriz) e coluna(o elemento dentro da matriz)
+
+        print(f" \nPara a relação: ({elemento1}, {elemento2})")
         print(f"Primeiro, verificamos as posições na matriz: [{indice1}][{indice2}]")
         print(f'Se ambos elementos estão presentes na relação, atribuímos o valor 1 à posição [{indice1}][{indice2}]')
-        matriz[indice1][indice2] = 1 #linha(a lista dentro da matriz) e coluna(o elemento dentro da matriz)
         print(f"Assim, a lista {indice1} da matriz e o elemento da lista {indice2} se torna {matriz[indice1]}")
         print(f"Assimilando o valor {matriz[indice1][indice2]} na posição [{indice1}][{indice2}]")
 
