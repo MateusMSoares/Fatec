@@ -15,10 +15,9 @@ def criar_matriz_relacao(conjunto, relacoes):
         indice2 = conjunto.index(elemento2) + 1 # pega o índice do segundo elemento
         print(f"Primeiro, verificamos as posições na matriz: [{indice1}][{indice2}]")
         print(f'Se ambos elementos estão presentes na relação, atribuímos o valor 1 à posição [{indice1}][{indice2}]')
-        matriz[indice1][indice2] = 1 #linha e coluna da matriz
-        print(f"Assim, a matriz na linha {indice1} e coluna {indice2} se torna {matriz[indice1]}")
+        matriz[indice1][indice2] = 1 #linha(a lista dentro da matriz) e coluna(o elemento dentro da matriz)
+        print(f"Assim, a lista {indice1} da matriz e o elemento da lista {indice2} se torna {matriz[indice1]}")
         print(f"Assimilando o valor {matriz[indice1][indice2]} na posição [{indice1}][{indice2}]")
-
 
     print('\n')
 
@@ -31,4 +30,4 @@ print(f"Dado o conjunto: {conjunto} e a relação {relacoes}. \n A sua matriz:")
 
 matriz_relacao = criar_matriz_relacao(conjunto, relacoes)
 for linha in matriz_relacao:
-    print(' '.join(map(str, linha)))
+    print(' '.join(map(str, linha))) #transforma todos os elementos em strings para que seja possivel concatenar, junta eles separando por espaço
