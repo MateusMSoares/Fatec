@@ -1,10 +1,9 @@
-# Definindo a funçao Dijkstra para encontrar o caminho mais curto em um grafo ponderado.
 def dijkstra(grafo, inicio):
-    # Inicializando um conjunto de vertices do grafo.
+    # Conjunto de vertices do grafo.
     vertices = set(grafo.keys())
     print(f'Vertices iniciais{vertices}')
     
-    # Inicializando um dicionario de distancias, configurando todas as distancias iniciais como infinito.
+    # Inicializando um dicionario de distancias, distancias iniciais como infinito.
     distancias = {vertex: float('infinity') for vertex in vertices}
     print(f'Distancias iniciais: {distancias}')
     
